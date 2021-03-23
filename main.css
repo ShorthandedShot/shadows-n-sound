@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+body {
+  margin:0;
+	/* background: linear-gradient(-45deg, #222848, #4A315E, #FA373B, #F7AE49); */
+  /* background: linear-gradient(-45deg, #ffffff, #f9f9f9, #000000, #ffffff);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite; */
+}
+
+h1 {
+  font-family: rig-shaded-light-extrude, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 5rem;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: monospace;
+}
+
+a {
+
+}
+
+::selection {
+  color: white;
+  text-shadow: 5px 5px black;
+  background: rgb(187, 187, 187);
+}
+
+.bg {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(-45deg, #ffffff, #f9f9f9, #e0e0e0, #ffffff, #d4d4d4, #ffffff, #f9f9f9);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+  z-index: -9999;
+}
+
+.header {
+  margin: 0 auto;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+.navigation {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  /* white-space: wrap; */
+  flex-wrap: nowrap;
+  font-family: rig-shaded-light-extrude, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#navlink {
+  font-family: rig-solid-bold-reverse, sans-serif;
+  /* font-family: rig-solid-bold-fill, sans-serif; */
+  font-weight: 700;
+  font-style: normal;
+  padding: 0 2vw;
+  text-decoration: none;
+  color: black;
+  border: 3px solid;
+  box-shadow: 5px 5px;
+  margin: 0 20px;
+}
+
+#navlink:hover {
+  /* text-decoration: line-through; */
+  /* text-shadow: 5px 5px white; */
+  color: white;
+  border: 3px solid white;
+  box-shadow: 5px 5px;
+  margin: 0 20px;
+  background: linear-gradient(-45deg, #222848, #4A315E, #FA373B, #F7AE49);
+}
+
+.container {
+  /* display: block; */
+  margin: 100px auto;
+  text-align: center;
+  width: 100%;
+  /* width: fit-content; */
+
+}
+
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* desktop first max width (go smaller further down), mobile first min width (go larger further down) */
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 120%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .navigation {
+    flex-direction: row;
+    align-content: space-between;
+  }
+
+  .body {
+
+  }
+
+  .item {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    width: 100%;
+  }
+
+  .navigation {
+    width: 400px;
+    flex-direction: column;
+    align-content: space-between;
+  }
+}
