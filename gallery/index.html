@@ -24,17 +24,30 @@
     <!-- </div> -->
     <div class="container">
 
+    <!-- OUTPUT AUDIOS -->
+    <audio id="audio1">
+      <source src="audio/mouseclick.mp3" type="audio/mpeg">
+      Your browser does not support this audio format.
+    </audio>
+
     <div class="gallery-grid">
+      <figure>
+        <img class="gallery-img" src="img/hands-23.jpg" alt="symbol image">
+        <br><br>
+
+        <input type="image" class="play gallery-output" src="../img/play.png" onclick="toggleSound();">
       </figure>
+
+<!-- onclick="toggleSound(); -->
+
+
+      <figure>
         <img class="gallery-img" src="img/hands-23.jpg" alt="symbol image">
       </figure>
-      </figure>
+      <figure>
         <img class="gallery-img" src="img/hands-23.jpg" alt="symbol image">
       </figure>
-      </figure>
-        <img class="gallery-img" src="img/hands-23.jpg" alt="symbol image">
-      </figure>
-      </figure>
+      <figure>
         <img class="gallery-img" src="img/hands-23.jpg" alt="symbol image">
       </figure>
     </div>
@@ -72,7 +85,6 @@
 
 
     </div>
-
 
     <script>
     function toggleSound() {
