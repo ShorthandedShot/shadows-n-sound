@@ -147,7 +147,7 @@ input:focus {
   align-items: center;
   margin: 0px auto;
   margin-bottom: -100px;
-  padding: 0px;
+  padding: 0px 0px;
   text-align: center;
   width: 100%;
   z-index: 900;
@@ -210,7 +210,6 @@ input:focus {
 
   #play {
     margin-bottom: -20px;
-  }
   }
 }
 
