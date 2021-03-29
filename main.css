@@ -157,7 +157,7 @@ input:focus {
 
 #play {
   width: 100px;
-  margin-bottom: -350px;
+  margin-bottom: -150px;
   z-index:99999999999;
 }
 
@@ -169,6 +169,12 @@ input:focus {
 }
 
 /* desktop first max width (go smaller further down), mobile first min width (go larger further down) */
+@media screen and (max-width: 1500px) {
+  #play {
+    margin-bottom: -80px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   html {
     font-size: 120%;
@@ -202,8 +208,8 @@ input:focus {
     width: 49%;
   }
 
-  .play {
-    margin-bottom: -50px;
+  #play {
+    margin-bottom: -20px;
   }
   }
 }
@@ -218,5 +224,9 @@ input:focus {
     flex-direction: column;
     align-content: space-between;
   }
+
+#play {
+  margin-bottom: 0px;
+}
 
 }
