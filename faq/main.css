@@ -154,6 +154,21 @@ input:focus {
   width: 100px;
 }
 
+.q {
+  font-family: rig-solid-bold-fill, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.a {
+  font-family: rig-shaded-bold-face, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+  margin: 15px 0px 30px;
+}
+
 @keyframes gradient {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}

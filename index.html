@@ -24,15 +24,17 @@
     <div class="container">
       <!-- this is an audio test heheh -->
       <audio id="audio">
-        <source src="audio/bit-bit-loop.mp3" type="audio/mpeg">
+        <source src="audio/karma-ron_pad-fieldchorus-dream-sound.wav" type="audio/wav">
         Your browser does not support this audio format.
       </audio>
 
-      <input type="image" class="play" src="img/play.png" onclick="toggleSound();">
-
-
       <h2>Transforming<br>visuals into audio</h2>
       <h3>one upload at a time:)</h3>
+
+      <input type="image" class="toggle" id="play" src="img/play.png" onclick="toggleSound();">
+
+    <!-- </div> -->
+      <img class="audio-gif freezeframe" src="img/Untitled-3.gif">
     </div>
 
 
@@ -45,7 +47,7 @@
         audioElem.pause();
     }
     </script> -->
-
+    <script src="freezeframe.min.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="functions.js"></script>
   </body>

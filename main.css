@@ -142,17 +142,25 @@ input:focus {
 
 .container {
   /* display: block; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0px auto;
-  padding: 50px;
+  margin-bottom: -100px;
+  padding: 0px;
   text-align: center;
   width: 100%;
+  z-index: 900;
   /* width: fit-content; */
 
 }
 
-.play {
+#play {
   width: 100px;
+  margin-bottom: -350px;
+  z-index:99999999999;
 }
+
 
 @keyframes gradient {
     0%{background-position:0% 50%}
@@ -193,6 +201,11 @@ input:focus {
   .item {
     width: 49%;
   }
+
+  .play {
+    margin-bottom: -50px;
+  }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -205,4 +218,5 @@ input:focus {
     flex-direction: column;
     align-content: space-between;
   }
+
 }
