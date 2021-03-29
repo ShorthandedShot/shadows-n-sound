@@ -70,7 +70,7 @@ p {
 }
 
 a {
-
+  text-decoration: none;
 }
 
 input:focus {

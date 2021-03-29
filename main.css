@@ -68,7 +68,7 @@ p {
 }
 
 a {
-
+  text-decoration: none;
 }
 
 input:focus {
@@ -161,11 +161,25 @@ input:focus {
   z-index:99999999999;
 }
 
+#outline {
+  animation: fadeIn 2s linear 6s;
+}
+
 
 @keyframes gradient {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* desktop first max width (go smaller further down), mobile first min width (go larger further down) */
