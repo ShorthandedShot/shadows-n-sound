@@ -68,12 +68,27 @@ p {
 }
 
 a {
+  color: #FA373B;
+  text-decoration: 1px dotted underline;
+}
 
+a:hover {
+  text-shadow: 2px 2px black;
 }
 
 input:focus {
   outline: 2px solid black;
   box-shadow: 5px 5px;
+}
+
+ul {
+  text-align: center;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.a > ul {
+  display: inline-block;
 }
 
 ::selection {
