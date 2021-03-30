@@ -78,7 +78,7 @@ input:focus {
 
 ::selection {
   color: white;
-  text-shadow: 5px 5px black;
+  text-shadow: 2px 2px black;
   background: rgb(187, 187, 187);
 }
 

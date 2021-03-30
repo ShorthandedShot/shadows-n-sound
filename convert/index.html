@@ -5,6 +5,7 @@
     <!-- <link rel="icon" href="img/boof.png"> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon.png">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.typekit.net/wgy7svx.css">
   </head>
@@ -23,6 +24,7 @@
 
     <div class="container">
       <!-- <h2>Converter</h2> -->
+      <br><br><br>
       <h3>Upload your file below.</h3><br>
       <p><strong>SHADOWS >>> SOUND</strong> currently supports .jpg, .png, .mp4, .mov, and .wmv file types.</p>
       <br>
@@ -36,46 +38,35 @@
       <div class="demo">
         <div></div>
       </div>
-      <br>
 
       <div class="gallery-grid">
         <figure>
-          <a href="demo-1/index.html">
+          <img class="gallery-img" src="../img/branch.jpg" alt="photo of a branch on a sidewalk casting a shadow">
+          <br><br>
+          <a href="branch/index.html">
             <button type="button" class="demo-button">
             branch</button>
           </a>
-          <br><br>
-
-          <img class="gallery-img" src="../img/branch.jpg" alt="photo of a branch on a sidewalk casting a shadow">
           <!-- <input type="image" class="play gallery-output" src="../img/play.png" onclick="toggleSound();"> -->
         </figure>
 
         <figure>
-          <div onclick="setAlert()" class="demo-button">tree</div>
-          <br>
-
-          <img class="gallery-img" src="../img/tree.jpg" alt="a shadow casted by a tree onto a grassy hill and the adjacent path">
-
-
-          <!-- <input type="image" class="play gallery-output" src="../img/play.png" onclick="toggleSoundOne();"> -->
-        </figure>
-
-        <figure>
-          <div onclick="setAlert()" class="demo-button">bridge</div>
-          <br>
-
-          <img class="gallery-img" src="../img/bridge.jpg" alt="a sideways image of a shadow casted by a wooden bridge railing">
-
-          <!-- <input type="image" class="play gallery-output" src="../img/play.png" onclick="toggleSoundTwo();"> -->
-        </figure>
-
-        <figure>
-          <div onclick="setAlert()" class="demo-button">bubble tea</div>
-          <br>
-
           <img class="gallery-img" src="../img/tea.jpg" alt="a shadow casted by a half finished cup of bubble tea">
+          <br><br>
+          <a href="tea/index.html">
+          <div class="demo-button">bubble tea</div></a>
+        </figure>
 
-          <!-- <input type="image" class="play gallery-output" src="../img/play.png" onclick="toggleSoundThree();"> -->
+        <figure>
+          <img class="gallery-img" src="../img/tree.jpg" alt="a shadow casted by a tree onto a grassy hill and the adjacent path">
+          <br><br>
+          <div onclick="setAlert()" class="demo-button">tree</div>
+        </figure>
+
+        <figure>
+          <img class="gallery-img" src="../img/bridge.jpg" alt="a sideways image of a shadow casted by a wooden bridge railing">
+          <br><br>
+          <div onclick="setAlert()" class="demo-button">bridge</div> 
         </figure>
 
       <!-- <input type="image" class="play" src="img/play.png" onclick="toggleSound();"> -->
