@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>shadows >>> sound</title>
+    <!-- <link rel="icon" href="img/boof.png"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wgy7svx.css">
+  </head>
+
+  <body>
+    <div class="header">
+      <h1><a style="text-decoration: none; color: black;" href="../../index.html"> SHADOWS >>> SOUND</a></h1>
+      <br>
+      <p class="navigation">
+        <a id="navlink" href="../../convert/index.html">convert</a>
+        <a id="navlink" href="../../gallery/index.html">gallery</a>
+        <a id="navlink" href="../../faq/index.html">faq</a>
+      </p>
+    </div>
+
+    <h2 id="header">conversion result</h2>
+    <div class="container">
+      <audio id="audio">
+        <source src="../../audio/the-bizniss_acoustic-riff.wav" type="audio/wav">
+        Your browser does not support this audio format.
+      </audio>
+      <br>
+      <p><strong>SHADOWS >>> SOUND</strong> had an error rendering the video.</p>
+      <br><br>
+      <p>CLick play to listen to the generated audio.</p>
+      <br>
+      <!-- top -->
+      <input type="image" id="play" src="../../img/play.png" onclick="toggleSound();">
+      <!-- <h3>Upload your file below.</h3><br> -->
+      <br><br>
+
+      <a href="../index.html">
+        <button type="button" class="demo-button">
+        back to converter</button>
+      </a>
+      <!-- <img src="../img/tea-outline.gif"> -->
+
+    </div>
+
+
+    <!-- <script>
+    function toggleSound() {
+      var audioElem = document.getElementById('audio');
+      if (audioElem.paused)
+        audioElem.play();
+      else
+        audioElem.pause();
+    }
+    </script> -->
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+    function toggleSound() {
+      var audioElem = document.getElementById('audio');
+      if (audioElem.paused)
+        audioElem.play();
+      else
+        audioElem.pause();
+    }
+    </script>
+  </body>
+
+</html>
